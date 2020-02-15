@@ -1,5 +1,8 @@
+# Photo Folder Rename
 
-### Usage
+A simple utility to rename folders from one date format to another.
+
+## Usage
 
 ```cli
 Usage:
@@ -14,4 +17,12 @@ Arguments:
                             Default: "MM-dd-yyyy"
   <newDateForm>         The new date format of the folders will be renamed to (ex: "yyyy-MM-dd", "yyyy-MM-dd-hh-mm").
                             Default: "yyyy-MM-dd"
+```
+
+## Publish & Build
+
+To publish to a single executable run the following command in the root project directory.
+
+```cli
+dotnet publish -r win-x64 -c release --self-contained
 ```
