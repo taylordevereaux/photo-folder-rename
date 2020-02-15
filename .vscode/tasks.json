@@ -7,7 +7,19 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/photo-folder-rename.csproj",
+                "${workspaceFolder}/photo-folder-rename/photo-folder-rename.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-demo",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/photo-folder-rename-demo/photo-folder-rename-demo.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +31,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/photo-folder-rename.csproj",
+                "${workspaceFolder}/photo-folder-rename/photo-folder-rename.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +44,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/photo-folder-rename.csproj",
+                "${workspaceFolder}/photo-folder-rename/photo-folder-rename.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

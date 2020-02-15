@@ -13,8 +13,8 @@ Arguments:
                             Default: ".\"
   <searchPattern>       Search pattern to filter folders. This pattern accepts wildcards and literals but not regex.
                             Default: "*-*-*"
-  <originalDateForm>    The exact date format of the existing folders (ex: "MM-dd-yyyy", "ddd, MMM dd, yyyy").
-                            Default: "MM-dd-yyyy"
+  <originalDateForm>    The exact date format of the existing folders (ex: "M-d-yyyy", "MMM-dd-yyyy").
+                            Default: "M-d-yyyy"
   <newDateForm>         The new date format of the folders will be renamed to (ex: "yyyy-MM-dd", "yyyy-MM-dd-hh-mm").
                             Default: "yyyy-MM-dd"
 ```
@@ -24,5 +24,5 @@ Arguments:
 To publish to a single executable run the following command in the root project directory.
 
 ```cli
-dotnet publish -r win-x64 -c release --self-contained
+dotnet publish -r win-x64 -c release /p:PublishSingleFile=true
 ```

@@ -12,7 +12,7 @@ namespace photo_folder_rename
         {
             string path = args.Length > 0 ? args[0] : ".\\";
             string searchPattern = args.Length > 1 ? args[1] :  "*-*-*";
-            string originalDateFormat = args.Length > 2 ? args[2] :  "MM-dd-yyyy";
+            string originalDateFormat = args.Length > 2 ? args[2] :  "M-d-yyyy";
             string newDateFormat = args.Length > 3 ? args[3] :  "yyyy-MM-dd";
 
             var directories = ParseDirectories(path, searchPattern, originalDateFormat, newDateFormat)
@@ -29,7 +29,7 @@ namespace photo_folder_rename
 
             foreach (var directory in directories)
             {
-                Console.WriteLine($"{directory.OriginalName} -> {directory.NewName}");
+                Console.WriteLine($"{directory.OriginalName}\t -> \t{directory.NewName}");
             }
 
             Console.WriteLine("");

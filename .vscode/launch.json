@@ -10,9 +10,22 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/photo-folder-rename.dll",
-            "args": [".\\test\\rename"],
-            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/photo-folder-rename/bin/Debug/netcoreapp3.1/photo-folder-rename.dll",
+            "args": ["..\\photo-folder-rename-demo\\test-data"],
+            "cwd": "${workspaceFolder}/photo-folder-rename",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (demo)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-demo",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/photo-folder-rename-demo/bin/Debug/netcoreapp3.1/photo-folder-rename-demo.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/photo-folder-rename-demo",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "integratedTerminal",
             "stopAtEntry": false
